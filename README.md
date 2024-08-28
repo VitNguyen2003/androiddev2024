@@ -12,5 +12,5 @@ Student Info
 
 * Name: Nguyễn Quốc Việt
 * ID: BA12-192
-* Group ID: *Your Group ID here*
+* Group ID: 20
 * Project Name: *Your Project Name here*
