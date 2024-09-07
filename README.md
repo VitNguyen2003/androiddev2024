@@ -12,5 +12,5 @@ Student Info
 
 * Name: Nguyễn Quốc Việt
 * ID: BA12-192
-* Group ID: 20
-* Project Name: *Your Project Name here*
+* Group ID: 19
+* Project Name: *Twitter Client*
