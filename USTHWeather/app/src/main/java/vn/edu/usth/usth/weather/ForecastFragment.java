@@ -78,7 +78,6 @@ public class ForecastFragment extends Fragment {
         ImageView img = new ImageView(getContext());
         img.setImageResource(R.drawable.clear);
 
-        LL.setOrientation(LinearLayout.VERTICAL);
         LL.addView(day);
         LL.addView(img);
         LL.addView(v);
