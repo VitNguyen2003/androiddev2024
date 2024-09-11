@@ -63,26 +63,26 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = new View(getContext());
-        v.setBackgroundColor(0xff7799ff);
+//         Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_forecast, container, false);
+    }
+}
+//        View v = new View(getContext());
+//        v.setBackgroundColor(0x20FF0000);
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_forecast, container, false);
 // create dynamic views in Fragment: A vertical LinearLayout (use LinearLayout’s setOrientation)
-        LinearLayout LL = new LinearLayout(getContext());
-        LL.setOrientation(LinearLayout.VERTICAL);
+//        LinearLayout LL = new LinearLayout(getContext());
 
-        // TextView (Thursday)
-        TextView day = new TextView(getContext());
-        day.setText("Thursday");
-        // ImageView (a weather icon)
-        ImageView img = new ImageView(getContext());
-        img.setImageResource(R.drawable.clear);
+//        // TextView (Thursday)
+//        TextView day = new TextView(getContext());
+//        day.setText("Thursday");
+//        // ImageView (a weather icon)
+//        ImageView img = new ImageView(getContext());
+//        img.setImageResource(R.drawable.clear);
 
-        LL.addView(day);
-        LL.addView(img);
-        LL.addView(v);
-        return LL;
-        // Inflate the layout for this fragment
-        // return inflater.inflate(R.layout.fragment_forecast, container, false);
-    }
-}
+//        LL.setOrientation(LinearLayout.VERTICAL);
+//       LL.addView(day);
+//       LL.addView(img);
+//        LL.addView(v);
+//        return F;
