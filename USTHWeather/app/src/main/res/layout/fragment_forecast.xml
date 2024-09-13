@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Use LinearLayout to have the blue forecast area-->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,42 +8,42 @@
     android:background="#ADD8E6"
     tools:ignore="Extra Text">
 
-    <!-- TODO: Update blank fragment layout -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp">
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="8dp">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#1c2caf"
-            android:padding="8dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="#1c2caf"-->
+<!--            android:padding="8dp">-->
 
-            <TextView
-                android:layout_width="273dp"
-                android:layout_height="41dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:text="USTH Weather"
-                android:textColor="#ffffff" />
+<!--            <TextView-->
+<!--                android:layout_width="273dp"-->
+<!--                android:layout_height="41dp"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:text="USTH Weather"-->
+<!--                android:textColor="#ffffff" />-->
 
-            <ImageView
-                android:layout_width="44dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:src="@drawable/ic_undo" />
+<!--            <ImageView-->
+<!--                android:layout_width="44dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:src="@drawable/ic_undo" />-->
 
-            <ImageView
-                android:layout_width="44dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:src="@drawable/ic_setting" />
-        </LinearLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="44dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:src="@drawable/ic_setting" />-->
+<!--        </LinearLayout>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -254,5 +254,4 @@
                     android:text="Thunderstorms\n25C - 28C" />
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</FrameLayout>
+</LinearLayout>

@@ -2,16 +2,22 @@ package vn.edu.usth.usth.weather;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentManager;
 
 import vn.edu.usth.usth.weather.R;
 
 public class WeatherActivity extends AppCompatActivity {
+
+    private static final String TAG = "WeatherActivity";
+    private DrawerLayout mDrawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +25,21 @@ public class WeatherActivity extends AppCompatActivity {
         setContentView(R.layout.activity_weather);
         Log.i ("ID", "onCreate");
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        SetSupportActionBar(toolbar);
+
         //Create a new Fragment to be placed in the activity layout
         ForecastFragment firstFragment= new ForecastFragment();
 
         //Add the fragment to the 'container' FrameLayout
+        FragmentManager fragmentManager = getSupportFragmentManager();
+//        fragmentManager.beginTransaction().add(R.id.fragment_forecast).commit();
         getSupportFragmentManager().beginTransaction().add(R.id.container,firstFragment).commit();
 //        FragmentManager fragmentManager = getSupportFragmentManager();
 //        fragmentManager.beginTransaction().add(R.id.main, ForecastFragment).commit();
+    }
+
+    private void SetSupportActionBar(Toolbar toolbar) {
     }
 
     @Override
