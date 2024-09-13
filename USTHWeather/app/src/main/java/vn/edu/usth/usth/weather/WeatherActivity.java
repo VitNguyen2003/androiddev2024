@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import vn.edu.usth.usth.weather.R;
 
@@ -30,13 +32,20 @@ public class WeatherActivity extends AppCompatActivity {
 
         //Create a new Fragment to be placed in the activity layout
         ForecastFragment firstFragment= new ForecastFragment();
+        WeatherFragment weatherFragment = new WeatherFragment();
 
         //Add the fragment to the 'container' FrameLayout
-        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentManager fragmentManager = getSupportFragmentManager();
 //        fragmentManager.beginTransaction().add(R.id.fragment_forecast).commit();
-        getSupportFragmentManager().beginTransaction().add(R.id.container,firstFragment).commit();
+//        getSupportFragmentManager().beginTransaction().add(R.id.container,firstFragment).commit();
 //        FragmentManager fragmentManager = getSupportFragmentManager();
 //        fragmentManager.beginTransaction().add(R.id.main, ForecastFragment).commit();
+        // Add a ViewPager into WeatherActivity
+        PagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
+
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setOffscreenPageLimit(3);
+        pager.setAdapter(adapter);
     }
 
     private void SetSupportActionBar(Toolbar toolbar) {
