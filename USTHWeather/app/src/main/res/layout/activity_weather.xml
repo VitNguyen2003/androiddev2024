@@ -2,46 +2,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".WeatherActivity">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:layout_alignParentTop="true"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#283593"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="60dp"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/forecastFragment"
-        android:name="vn.edu.usth.usth.weather.ForecastFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_weather"/>
+        android:layout_below="@id/toolbar" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/weatherFragment"
-        android:name="vn.edu.usth.usth.weather.WeatherFragment"
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        tools:layout="@layout/fragment_forecast"/>
-    </LinearLayout>
+        android:layout_height="match_parent" />
 
 </RelativeLayout>

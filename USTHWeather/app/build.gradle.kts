@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "vn.edu.usth.usth.weather"
+    namespace = "vn.edu.usth.weather"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "vn.edu.usth.usth.weather"
-        minSdk = 34
+        applicationId = "vn.edu.usth.weather"
+        minSdk = 33
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,5 +40,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation ("com.google.android.material:material:1.9.0")
 
 }
