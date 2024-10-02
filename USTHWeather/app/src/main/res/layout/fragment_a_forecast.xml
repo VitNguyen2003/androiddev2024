@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aForecastFragment"    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/monday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/cloudynew" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/cloud"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/tuesday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/cloudynew" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/cloud"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/wednesday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/flood" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/flood"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/thursday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/cloudynew" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/cloud"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/friday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/cloudynew" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/cloud"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/saturday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/sunny" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/sunny"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/sunday"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:src="@drawable/sunny" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8px"
+                        android:paddingRight="8px"
+                        android:text="@string/sunny"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+</FrameLayout>

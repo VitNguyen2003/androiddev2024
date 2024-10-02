@@ -13,10 +13,10 @@ import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ForecastFragment#newInstance} factory method to
+ * Use the {@link aForecastFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ForecastFragment extends Fragment {
+public class aForecastFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +27,7 @@ public class ForecastFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ForecastFragment() {
+    public aForecastFragment() {
         // Required empty public constructor
     }
 
@@ -37,11 +37,11 @@ public class ForecastFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ForecastFragment.
+     * @return A new instance of fragment aForecastFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ForecastFragment newInstance(String param1, String param2) {
-        ForecastFragment fragment = new ForecastFragment();
+    public static aForecastFragment newInstance(String param1, String param2) {
+        aForecastFragment fragment = new aForecastFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,9 +61,27 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-//         Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_forecast, container, false);
-
-
+//        View v = new View(getContext());
+//        v.setBackgroundColor(0x20FF0000);
+//
+//        LinearLayout LL = new LinearLayout(getContext());
+//        LL.setOrientation(LinearLayout.VERTICAL);
+//
+////        ImageView sunny = new ImageView(getContext());
+////        sunny.setImageResource(R.drawable.sunny);
+//        ImageView cloudy = new ImageView(getContext());
+//        cloudy.setImageResource(R.drawable.cloudynew);
+//
+//        TextView text = new TextView(getContext());
+//        text.setText("today:");
+//        text.setTextSize(30);
+//        LL.addView(text);
+////      LL.addView(sunny);
+//        LL.addView(cloudy);
+//        LL.addView(v);
+//        return LL;
+        // Inflate the layout for this fragment(this is real comment)
+      return inflater.inflate(R.layout.fragment_a_forecast, container, false);
     }
 }
+

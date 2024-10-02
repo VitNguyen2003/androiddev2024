@@ -2,49 +2,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="20dp"
-    android:layout_margin="25dp"
-    android:background="@drawable/frame">
-
-
-
-    <TextView
-        android:id="@+id/text_temperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="  24C"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/text_type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="    Sunny"
-        android:layout_below="@id/text_temperature"
-
-        android:textSize="18sp"
-        android:textColor="@android:color/black" />
-
+    android:layout_height="380dp"
+    android:background="@color/white"
+    android:padding="8dp"
+    tools:context=".WeatherFragment">
 
     <ImageView
-        android:id="@+id/weather_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sun"
-        android:layout_centerInParent="true" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame10prac" />
 
-
+    <!-- creating a text view for displaying the text for parent activity-->
     <TextView
-        android:id="@+id/text_location"
-        android:layout_width="wrap_content"
+        android:id="@+id/today"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="38dp"
-        android:text="Hà Nội"
-        android:textColor="@android:color/black"
-        android:textSize="14sp" />
+        android:paddingTop="20dp"
+        android:paddingStart="30dp"
+        android:text="@string/today"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:text="@string/wednesday"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/today"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/flood"
+        >
+    </ImageView>
 
 </RelativeLayout>

@@ -1,8 +1,19 @@
 <resources>
-
     <string name="app_name">USTH Weather</string>
-    <string name="hanoi_tab">Hanoi</string>
-    <string name="hcm_tab">Ho Chi Minh City</string>
-    <string name="danang_tab">Da Nang</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="Hanoi">Hanoi</string>
+    <string name="cloud">cloud \n 23C - 27C</string>
+    <string name="flood">flood \n 17C - 22C</string>
+    <string name="sunny">sunny \n 28C - 33C</string>
+    <string name="today">weather today:</string>
+    <string name="refresh_message">Refresh...</string>
+    <string name="fetch_success">Fetch_success</string>
 </resources>
