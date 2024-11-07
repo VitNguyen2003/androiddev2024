@@ -6,6 +6,12 @@
         android:title="Refresh"
         android:icon="@drawable/refresh"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_changeInFragment"
+        android:title="Boom"
+        android:icon="@drawable/image"
+        app:showAsAction="always" />
+
 
     <item
         android:id="@+id/action_settings"
